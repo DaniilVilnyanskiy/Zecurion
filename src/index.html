@@ -27,7 +27,7 @@
             </div>
             <div class="main__container">
                 <div class="main__search">
-                    <a class="main__search-link" id="search"><img src="img/search.png"></a>
+                    <a class="main__search-link" id="search"><input placeholder="Поиск..."><!--либо картинка лупы <img src="img/search.png">--></a>
                     <div class="main__search-head">
                         <a id="search"><img src="img/search.png"></a><input placeholder="Быстрый поиск...">
                     </div>
@@ -50,7 +50,7 @@
                                 <img src="img/item2.png" alt="Фото">
                             </div>
                             <div class="item_div2">
-                                <p>Виктория Беляева <span id="eye"><img src=""></span></p>
+                                <p>Виктория Беляева <span id="eye"><img src="img/eye.png" alt="Иконка глаза"></span></p>
                                 <p>Менеджер, Отдел продаж</p>
                                 <p>в отпуске</p>
                             </div>
@@ -75,7 +75,7 @@
                 <div class="main__user">
                     <section class="main__user_head">
                         <div class="user">
-                            <img src="img/item2.png">
+                            <div class="user__avatar"><img src="img/item2.png"><img src="img/smile.png"></div>
                             <div>
                                 <p>Виктория Беляева<span id="eyeUser"></span></p>
                                 <p>Менеджер, Отдел продаж</p>
@@ -136,28 +136,49 @@
                             <div class="app-category">
                                 <p class="user-title">ПРИЛОЖЕНИЯ И КАТЕГОРИИ</p>
                                 <div class="app-category__grid">
-                                    <div class="grid-block"><p>Категории приложений</p><p>Время</p><p>%</p><p>рост</p></div>
-                                    <div class="grid-block"><p>Мессенджеры</p> <p>time</p> <p>18</p> <p>+2%</p></div>
-                                    <div class="grid-block"><p>Браузеры</p><p>time</p><p>12</p><p>-3%</p></div>
-                                    <div class="grid-block"><p>Игры</p><p>time</p><p>7</p><p>0</p></div>
+                                    <div class="grid-block user-grid-line">
+                                        <p class="first_p">Категории приложений</p>
+                                        <p>Время</p><p>%</p><p>рост</p>
+                                    </div>
+                                    <div class="grid-block">
+                                        <div class="first_p"> <div class="square-yellow"></div><p>Мессенджеры</p> </div>
+                                        <p class="time">time</p><p>18</p><p>+2%</p>
+                                    </div>
+                                    <div class="grid-block">
+                                        <div class="first_p"> <div class="square-yellow"></div><p>Браузеры</p>    </div>
+                                        <p class="time">time</p><p>12</p><p>-3%</p>
+                                    </div>
+                                    <div class="grid-block">
+                                        <div class="first_p"> <div class="square-grey"></div><p>Игры</p>          </div>
+                                        <p class="time">time</p><p>7</p> <p>0  </p>
+                                    </div>
                                 </div>
                             </div>
                             <div class="site-category">
                                 <p class="user-title">САЙТЫ И КАТЕГОРИИ</p>
                                 <div class="app-category__grid">
-                                    <div class="grid-block"><p>Категории приложений</p><p>Время</p><p>%</p><p>рост</p></div>
-                                    <div class="grid-block"><p>Мессенджеры</p> <p>time</p> <p>18</p> <p>+2%</p></div>
-                                    <div class="grid-block"><p>Браузеры</p><p>time</p><p>12</p><p>-3%</p></div>
-                                    <div class="grid-block"><p>Игры</p><p>time</p><p>7</p><p>0</p></div>
+                                    <div class="grid-block site-grid-line"><p class="first_p">Категории сайтов</p><p>Время</p><p>%</p><p>рост</p></div>
+                                    <div class="grid-block">
+                                        <div class="first_p"> <div class="square-yellow"></div><p>Поисковики</p> </div>
+                                        <p class="time">time</p><p>18</p><p>+2%</p>
+                                    </div>
+                                    <div class="grid-block">
+                                        <div class="first_p"> <div class="square-grey"></div><p>Новостные порталы</p>    </div>
+                                        <p class="time">time</p><p>12</p><p>-3%</p>
+                                    </div>
+                                    <div class="grid-block container-four">
+                                        <div class="first_p"> <div class="square-grey"></div><p>Сайты с неопределенным наполнением</p>          </div>
+                                        <p class="time">time</p><p>7</p> <p>0  </p>
+                                    </div>
                                 </div>
                             </div>
                             <div class="discipline">
                                 <p class="user-title">ДИСЦИПЛИНА</p>
                                 <div class="app-category__grid">
-                                    <div class="grid-block"><p>Категории приложений</p><p>Время</p><p>%</p><p>рост</p></div>
-                                    <div class="grid-block"><p>Мессенджеры</p> <p>time</p> <p>18</p> <p>+2%</p></div>
-                                    <div class="grid-block"><p>Браузеры</p><p>time</p><p>12</p><p>-3%</p></div>
-                                    <div class="grid-block"><p>Игры</p><p>time</p><p>7</p><p>0</p></div>
+                                    <div class="grid-block discipline discipline-grid-line-head"><p>Дата</p> <p>Приход на работу</p>                       <p>Уход с работы</p>             <p>Время на работе</p></div>
+                                    <div class="grid-block discipline discipline-grid-line">     <p>29.02</p><p>08:46<span class="prefix">+16 мин</span></p><p>08:46<span class="prefix">+16 мин</span></p><p>09:06<span class="prefix">+6 мин</span></p></div>
+                                    <div class="grid-block discipline discipline-grid-line">     <p>28.02</p><p>08:27<span class="prefix">-3 мин</span></p> <p>08:27<span class="prefix">-3 мин</span></p> <p>08:36<span class="prefix">-24 мин</span></p></div>
+                                    <div class="grid-block discipline discipline-grid-line">     <p>25.02</p><p>08:42<span class="prefix">+12 мин</span></p><p>08:42<span class="prefix">+12 мин</span></p><p>08:36<span class="prefix">-24 мин</span></p></div>
                                 </div>
                             </div>
                         </div>
